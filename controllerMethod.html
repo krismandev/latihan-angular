@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="assets/js/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="personController">
+      <tr>
+        <td>Nama depan :</td>
+        <td><input type="text" ng-model="namaDepan"></td>
+        <td>Nama belakang :</td>
+        <td><input type="text" ng-model="namaBelakang"></td>
+      </tr>
+      <br>
+      Nama lengkap : {{namaLengkap()}}
+    </div>
+    <script>
+      var app= angular.module("myApp",[]);
+      app.controller("personController",function($scope){
+        $scope.namaDepan = "Yosef";
+        $scope.namaBelakang = "Murya";
+        $scope.namaLengkap = function(){
+          return $scope.namaDepan + " " + $scope.namaBelakang;
+        };
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="assets/js/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myController">
+      Nama : {{nama}} <br>
+      Hobby : {{hobby}}
+    </div>
+    <script>
+      var app = angular.module("myApp",[]);
+      app.controller("myController",function($scope){
+        $scope.nama = "Yosef Murya";
+        $scope.hobby = "Coding";
+      });
+    </script>
+  </body>
+</html>

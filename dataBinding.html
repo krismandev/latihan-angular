@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="assets/js/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="" ng-init="jumlahBarang=1; harga=4000">
+      Jumlah barang : <input type="number" ng-model="jumlahBarang"><br>
+      Harga dalam rupiah : <input type="number" ng-model="harga"> <br>
+      Total : Rp. {{jumlahBarang*harga}}
+    </div>
+  </body>
+</html>

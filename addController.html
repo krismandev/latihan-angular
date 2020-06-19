@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="assets/js/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">{{namaDepan + " " + namaBelakang + " " + gelarAkademik}}</div>
+    <script>
+      var app= angular.module("myApp",[]);
+      app.controller("myCtrl",function($scope){
+        $scope.namaDepan = "Yosef";
+        $scope.namaBelakang = " Murya ";
+        $scope.gelarAkademik = " S.T., M.Kom.";
+      });
+    </script>
+  </body>
+</html>

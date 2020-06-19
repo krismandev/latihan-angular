@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="assets/js/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="namaAnda" tampil-nama></div>
+    <script>
+      var app= angular.module("namaAnda",[]);
+      app.directive("tampilNama",function(){
+        return {
+          template : "Menampilkan nama Yosef Murya dengan directive"
+        };
+      });
+    </script>
+  </body>
+</html>
